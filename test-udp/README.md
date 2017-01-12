@@ -8,10 +8,10 @@ For more information see for example: https://support.asperasoft.com/hc/en-us/ar
 ## Start the server
 
 ```
-docker run --name test-udp-server --rm -d -p 33001 sverrirab/test-udp
+docker run --name test-udp-server -d -p 33001 sverrirab/test-udp
 ```
 
-To find the IP-ADDRESS:
+To find the IP-ADDRESS of the test-udp-server on the container network:
 
 ```
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' test-udp-server
